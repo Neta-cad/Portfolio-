@@ -122,19 +122,26 @@ body.light .nav { background: rgba(245, 243, 238, 0.85); }
 .hero-signature { text-align: right; margin-top: 16px; }
 .hero-signature .handwritten { font-size: 1.4rem; color: var(--muted); }
 
-/* HERO PHOTO */
+.terminal { position: relative; }
+
 .hero-photo-wrap {
-  display: flex;
-  justify-content: center;
-  margin-top: 28px;
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  z-index: 5;
 }
 .hero-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  width: 84px;
+  height: 104px;
   object-fit: cover;
-  border: 3px solid var(--amber);
-  box-shadow: 0 8px 30px rgba(232, 163, 61, 0.25);
+  border-radius: 8px;
+  border: 2px solid var(--amber);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 600px) {
+  .hero-photo { width: 60px; height: 76px; }
+  .hero-photo-wrap { top: 46px; right: 12px; }
 }
 
 /* PROJECT LINKS */
