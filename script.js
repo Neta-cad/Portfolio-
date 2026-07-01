@@ -1,20 +1,3 @@
-// ===== HERO TYPING ANIMATION =====
-const query = "SELECT * FROM interns WHERE name = 'Ayomide';";
-const typedEl = document.getElementById('typedQuery');
-const resultEl = document.getElementById('queryResult');
-let i = 0;
-
-function typeQuery() {
-  if (i < query.length) {
-    typedEl.textContent += query.charAt(i);
-    i++;
-    setTimeout(typeQuery, 35);
-  } else {
-    setTimeout(() => resultEl.classList.remove('hidden'), 400);
-  }
-}
-window.addEventListener('DOMContentLoaded', () => setTimeout(typeQuery, 500));
-
 // ===== PROJECT ROW EXPAND =====
 document.querySelectorAll('.project-row').forEach(row => {
   row.addEventListener('click', () => {
