@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayomide Akingboye | Data Analyst & Full-Stack Developer</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <span class="nav-logo">ayomide<span class="accent">.db</span></span>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">about</a>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#playground">playground</a>
+      <a href="#timeline">timeline</a>
+      <a href="#contact">contact</a>
+    </div>
+    <div class="nav-actions">
+      <button id="recruiterToggle" class="btn-ghost">Recruiter Mode</button>
+      <button id="themeToggle" class="btn-icon" aria-label="Toggle theme">◐</button>
+      <button id="navBurger" class="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">console — psql</span>
+      </div>
+      <div class="terminal-body">
+        <p class="prompt">talent_db=# <span id="typedQuery"></span><span class="cursor">|</span></p>
+        <div id="queryResult" class="query-result hidden">
+          <table>
+            <thead><tr><th>field</th><th>value</th></tr></thead>
+            <tbody>
+              <tr><td>name</td><td>Akingboye Ayomide</td></tr>
+              <tr><td>role</td><td>Data Analyst · Full-Stack Dev · DB Manager</td></tr>
+              <tr><td>location</td><td>Lagos, Nigeria</td></tr>
+              <tr><td>stack</td><td>SQL / PostgreSQL, Power BI, JS, Supabase</td></tr>
+              <tr><td>status</td><td class="status-live">available_for_hire</td></tr>
+            </tbody>
+          </table>
+          <p class="row-count">(5 rows) — query took 12ms</p>
+        </div>
+      </div>
+    </div>
+   <div class="hero-photo-wrap">
+  <img src="profile.png" alt="Ayomide Akingboye" class="hero-photo">
+</div>
+<div class="hero-signature">
+  <p class="handwritten">— built by Ayomide, from a phone in Lagos</p>
+</div>
+    <div class="hero-cta">
+      <a href="#projects" class="btn-primary">View Work</a>
+      <a href="#contact" class="btn-secondary">Hire Me</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <p class="eyebrow">01 / about</p>
+  <h2 class="section-title">The <span class="handwritten accent-text">short version</span></h2>
+  <div class="about-grid">
+    <p class="about-text">
+      I'm a junior data analyst and full-stack developer studying at the National Open University of Nigeria.
+      I design databases, write queries that answer real business questions, and build the interfaces that put
+      that data in front of people who need it.
+      <br><br>
+      Here's the part people don't expect: most of this — including this site — is built from an Android phone,
+      using Acode and Termux. No fancy IDE, no dedicated machine. Just a plan, a terminal, and a lot of pushes to git.
+    </p>
+    <div class="about-stats">
+      <div class="stat"><span class="stat-num">30+</span><span class="stat-label">SQL queries shipped</span></div>
+      <div class="stat"><span class="stat-num">4</span><span class="stat-label">production databases designed</span></div>
+      <div class="stat"><span class="stat-num">1</span><span class="stat-label">phone, zero excuses</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <p class="eyebrow">02 / projects</p>
+  <h2 class="section-title">Things I've <span class="handwritten accent-text">shipped</span></h2>
+
+  <div class="project-list">
+
+    <article class="project-row" data-expand="p1">
+      <div class="project-row-head">
+        <h3>Sabipass</h3>
+        <span class="project-tag mint">VC-shortlisted</span>
+        <span class="project-arrow">＋</span>
+      </div>
+      <p class="project-sub">AI-powered exam prep platform for WAEC, JAMB & NECO students across Africa</p>
+      <div class="project-body">
+        <p class="project-links">
+  <a href="https://github.com/Neta-cad/revenue-intelligence-system" target="_blank">GitHub ↗</a>
+<p class="project-links">
+  <a href="https://github.com/Neta-cad/revenue-intelligence-system" target="_blank">GitHub ↗</a>
+  <a href="https://github.com/Neta-cad/remote-hustle-db" target="_blank">RemoteHustleDB Repo ↗</a>
+</p>
+        <p><strong>Problem:</strong> Parents and schools need a reliable way to track and improve student exam readiness at scale, across subjects and regions.</p>
+        <p><strong>What I built:</strong> Led the data & product side — adaptive learning engine logic, predictive score modelling, and the VC pitch deck (v6) covering the Polymorphic RAG two-pass architecture.</p>
+        <p><strong>Stack:</strong> <code>Data modelling</code> <code>DeepSeek V4</code> <code>Product strategy</code></p>
+        <p><strong>Result:</strong> Shortlisted by venture capitalists for funding.</p>
+      </div>
+    </article>
+
+    <article class="project-row" data-expand="p2">
+      <div class="project-row-head">
+        <h3>TalentForge Africa — Upstairs</h3>
+        <span class="project-tag amber">12-day sprint</span>
+        <span class="project-arrow">＋</span>
+      </div>
+      <p class="project-sub">Data & Operations deliverables for a live talent-pipeline internship program</p>
+      <div class="project-body">
+        <p><strong>Problem:</strong> The program needed operational infrastructure — SOPs, QA processes, and reporting — built fast, on a live database.</p>
+        <p><strong>What I built:</strong> A 7-table Supabase database, 31 production SQL queries, KPI dashboards, and full operational documentation generated programmatically as Word docs.</p>
+        <p><strong>Stack:</strong> <code>PostgreSQL</code> <code>Supabase</code> <code>Node.js (docx)</code></p>
+        <p><strong>Result:</strong> All deliverables shipped within a strict 12-day MVP window.</p>
+      </div>
+    </article>
+
+    <article class="project-row" data-expand="p3">
+      <div class="project-row-head">
+        <h3>RevIQ — Revenue Intelligence System</h3>
+        <span class="project-tag">Stage 2</span>
+        <span class="project-arrow">＋</span>
+      </div>
+      <p class="project-sub">A churn-detection and revenue analytics database built for the Remote Hustle competition</p>
+      <div class="project-body">
+        <p><strong>Problem:</strong> Businesses need early warning signs of customer churn and a clear view of revenue drivers.</p>
+        <p><strong>What I built:</strong> A 12-table PostgreSQL system with materialized views, automated churn-detection triggers, and 12 analytical queries.</p>
+        <p><strong>Stack:</strong> <code>PostgreSQL</code> <code>Materialized Views</code> <code>Triggers</code></p>
+        <p><strong>Result:</strong> Advanced to the Final Stage Internship Pathway.</p>
+      </div>
+    </article>
+
+    <article class="project-row" data-expand="p4">
+  <div class="project-row-head">
+    <h3>Analytica</h3>
+    <span class="project-tag">Africa's #1 Data Intelligence Platform</span>
+    <span class="project-arrow">＋</span>
+  </div>
+  <p class="project-sub">A full-featured web platform: forum, dataset library, job board & AI assistant</p>
+  <div class="project-body">
+    <p><strong>Problem:</strong> African data professionals lacked one place to find datasets, jobs, and community.</p>
+    <p><strong>What I built:</strong> A complete platform in vanilla HTML/CSS/JS with a Supabase backend, Gemini-powered AI assistant, and Paystack payment integration.</p>
+    <p><strong>Stack:</strong> <code>JavaScript</code> <code>Supabase</code> <code>Vercel Functions</code> <code>Paystack</code></p>
+    <p class="project-links"><a href="https://analytica-eta.vercel.app" target="_blank">Live Site ↗</a></p>
+  </div>
+</article>
+
+<article class="project-row" data-expand="p5">
+  <div class="project-row-head">
+    <h3>Nexabay</h3>
+    <span class="project-tag mint">Live</span>
+    <span class="project-arrow">＋</span>
+  </div>
+  <p class="project-sub">A multi-vertical marketplace connecting buyers and sellers across shopping, rentals, services, rides & travel</p>
+  <div class="project-body">
+    <p><strong>Problem:</strong> People juggle separate apps for shopping, renting a place, booking a ride, or finding a service — there's no single trusted marketplace for everyday transactions in one place.</p>
+    <p><strong>What I built:</strong> A multi-vertical marketplace connecting buyers and sellers across shopping, house rentals, local services, ride-hailing, and travel/hotel bookings — all on one platform.</p>
+    <p><strong>Stack:</strong> <code>JavaScript</code> <code>HTML</code> <code>CSS</code></p>
+    <p class="project-links"><a href="https://nexabay-hchp.vercel.app/" target="_blank">Live Site ↗</a> <a href="https://github.com/Neta-cad/Nexabay" target="_blank">GitHub ↗</a></p>
+  </div>
+</article>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <p class="eyebrow">03 / skills</p>
+  <h2 class="section-title">What I <span class="handwritten accent-text">work with</span></h2>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <h4>Data & Databases</h4>
+      <ul><li>SQL / PostgreSQL</li><li>Supabase</li><li>Database Design</li><li>Materialized Views & Triggers</li></ul>
+    </div>
+    <div class="skill-group">
+      <h4>Analysis & Reporting</h4>
+      <ul><li>Power BI</li><li>Excel (Advanced)</li><li>KPI Dashboards</li><li>Data Storytelling</li></ul>
+    </div>
+    <div class="skill-group">
+      <h4>Development</h4>
+      <ul><li>JavaScript</li><li>HTML / CSS</li><li>Vercel Functions</li><li>REST APIs</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- PLAYGROUND -->
+<section id="playground" class="section">
+  <p class="eyebrow">04 / playground</p>
+  <h2 class="section-title">Run a <span class="handwritten accent-text">real query</span></h2>
+  <p class="section-desc">This is a live, sandboxed SQL engine running in your browser — query a real sample dataset from one of my projects. No backend, no risk, just SQL.</p>
+  <div class="playground-wrap">
+    <div class="playground-editor">
+      <label for="sqlInput" class="pg-label">SELECT statement only</label>
+      <textarea id="sqlInput" spellcheck="false">SELECT name, role, status FROM interns WHERE status = 'active';</textarea>
+      <div class="pg-actions">
+        <button id="runQuery" class="btn-primary">Run ▸</button>
+        <div class="pg-samples" id="pgSamples"></div>
+      </div>
+    </div>
+    <div class="playground-output">
+      <div id="pgStatus" class="pg-status">Loading SQL engine…</div>
+      <div id="pgOutput"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline" class="section">
+  <p class="eyebrow">05 / timeline</p>
+  <h2 class="section-title">How I <span class="handwritten accent-text">got here</span></h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-date">Stage 1</span>
+      <h4>RemoteHustleDB</h4>
+      <p>Built a 10-table PostgreSQL database on Supabase — first real production database.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-date">Stage 2</span>
+      <h4>RevIQ</h4>
+      <p>Expanded into a 12-table revenue intelligence system with churn detection. Advanced to Final Stage.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-date">Sprint</span>
+      <h4>TalentForge Upstairs</h4>
+      <p>12-day operational data & docs sprint on a live Supabase database.</p>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-date">Now</span>
+      <h4>Sabipass</h4>
+      <p>Founding team member on a VC-shortlisted edtech platform for African students.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <p class="eyebrow">06 / contact</p>
+  <h2 class="section-title">Let's <span class="handwritten accent-text">work together</span></h2>
+  <div class="contact-grid">
+    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xkoegqpq" method="POST">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Tell me about the role or project" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+    <div class="contact-side">
+      <a href="https://wa.me/2348128129139" class="btn-secondary" target="_blank">Chat on WhatsApp</a>
+      <a href="https://github.com/Neta-cad" target="_blank">GitHub ↗</a>
+      <a href="https://mishael.hashnode.dev" target="_blank">Blog ↗</a>
+      <p class="handwritten contact-note">always open to a good problem to solve</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Akingboye Ayomide — built by hand, on a phone, in Lagos.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
