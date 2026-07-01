@@ -125,23 +125,23 @@ body.light .nav { background: rgba(245, 243, 238, 0.85); }
 .terminal { position: relative; }
 
 .hero-photo-wrap {
-  position: absolute;
-  top: 14px;
-  right: 18px;
-  z-index: 5;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 4px;
+  background: var(--panel-2);
+  border-bottom: 1px solid var(--border);
 }
 .hero-photo {
-  width: 84px;
-  height: 104px;
+  width: 180px;
+  height: 220px;
   object-fit: cover;
-  border-radius: 8px;
-  border: 2px solid var(--amber);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  border-radius: 10px;
+  border: 3px solid var(--amber);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
 @media (max-width: 600px) {
-  .hero-photo { width: 60px; height: 76px; }
-  .hero-photo-wrap { top: 46px; right: 12px; }
+  .hero-photo { width: 140px; height: 175px; }
 }
 
 /* PROJECT LINKS */
