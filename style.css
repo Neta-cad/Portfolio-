@@ -238,6 +238,19 @@ body.recruiter .project-body { max-height: none !important; }
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .nav-links { display: none; }
+  .nav-links.mobile-open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  padding: 20px 24px;
+  gap: 18px;
+  z-index: 99;
+}
   .burger { display: block; }
   .about-grid, .playground-wrap, .contact-grid { grid-template-columns: 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
